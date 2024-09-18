@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>podscast_form</title>
+</head>
+
+<body>
+
+    <h1>UDGIV DIN PODCAST</h1>
+
+    <div class="grid_1_1">
+
+        <p>Drømmer du om at udgive din podcast på de store tjenester (Spotify, Apple Podcast, Google Podcast m.fl.)?
+
+            Ansøg om at få din podcast på KEAs officielle podcastprofil! Du får din helt egen kanal på profilen med alle
+            dine
+            afsnit, hjælp til at nå ud til KEAs 10.000+ følgere og faglig sparring fra KEAs podcast-netværk.
+
+            Vi udvælger podcasts af særlig høj kvalitet, og hvis du i første omgang ikke bliver udvalgt, skal du ikke
+            miste
+            modet.
+            vi vil gerne hjælpe dig med at tage din podcast til næste niveau med feedback, workshops og faglig sparring.
+
+            <img src="mic_pic.png" alt="">
+
+            <!-- kan ikke få billedet ind -->
+        </p>
+
+
+    </div>
+
+    <h3>Generel info om dig og din podcast</h3>
+    <div class="formsbokse">
+
+        <form class="">
+            <label for="fname">Fulde navn:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Titlen på din podcast*:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Mail:</label>
+            <input type="email" id="email" name="email">
+
+        </form>
+
+        <h2>
+            Er din podcast en serie eller et enkelt afsnit? Sæt X
+        </h2>
+
+        <div class="formbox_serie_eller_afsnit">
+            <label>
+                <input type="checkbox" name="option3" value="Ja"> Serie
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="option3" value="Ja"> Enkel afsnit
+            </label><br><br>
+        </div>
+
+
+        <h2>
+            Yderlige informationer:
+        </h2>
+
+        <h3>Upload coverbillede til din podcast*</h3>
+
+        <p>Upload din fil
+        <p>
+        <form class="upload_fil" action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">Vælg en fil:</label>
+            <input type="file" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf,.docx"><br><br>
+            <input type="submit" value="Upload fil">
+        </form>
+
+        <p>Du skal uploade et coverbillede til brug for reklame af din podcast på kea.dk. Billedet skal være 2200x2400px
+            og i
+            .jpg/.jpeg eller .png. <br>
+            <br>
+
+            Du skal navngive coverbilledet sådan her:ditnavn-podcasttitel-keadk-coverbillede
+        </p>
+        <div class="andre_kommentarer">
+            <label for="fname">Hvis du har flere informationer om din podcast, kan du skrive dem her.</label>
+            <input type="text" id="kryds"><br><br>
+        </div>
+
+        <h3>Tilladelse til brug af podcast*</h3>
+
+        <label>
+            <input type="checkbox" name="option3" value="Ja"> Jeg giver hermed tilladelse til, at min podcast og
+            tilhørende billeder og tekst uploades til KEAs podbean-kanal og
+            kea.dk, samt at KEA må reklamere for min podcast på KEAs SoMe-kanaler.
+        </label><br><br>
+
+        <input type="submit" value="Send ansøgning">
+    </div>
+
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
+
+</html>

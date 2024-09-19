@@ -2,7 +2,7 @@ const URLparams = new URLSearchParams(window.location.search);
 const id = URLparams.get("id");
 const key =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBiampyamR5bmRzcXhrYWl4dnJtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU5NzAyNzAsImV4cCI6MjA0MTU0NjI3MH0.rMV_E9Z07FiTskqGWmi3fkRL4vr0nJVIT3QuQQ9Lk70";
-console.log(id);
+// console.log(id);
 
 fetch(
   "https://kea-alt-del.dk/t7/api/products/",

@@ -4,45 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Se udstyr</title>
+    <link rel="stylesheet" href="produktliste.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="tilbage">
-      <a href="bookingudstyr.html" class="previous2">&#8249;</a>
+    <div class="wrap">
+      <div class="tilbage">
+        <a href="bookingudstyr.html" class="previous2">&#8249;</a>
+      </div>
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Tech & Story lab</a></li>
+        <li>
+          <a href="bookingudstyr.html">Se udstyr</a>
+        </li>
+        <li>
+          <a href="produktliste.html">Produkter</a>
+        </li>
+        <li>
+          <a href="single-view.html">Produkt</a>
+        </li>
+      </ol>
     </div>
-    <ol class="breadcrumbs">
-      <li><a href="index.html">Tech & Story lab</a></li>
-      <li>
-        <a href="bookingudstyr.html">Se udstyr</a>
-      </li>
-      <li>
-        <a href="produktliste.html">Produkter</a>
-      </li>
-      <li>
-        <a href="single-view.html">Produkt</a>
-      </li>
-    </ol>
-    <main>
+
+    <!-- Section 2 -->
+    <div class="section-2">
       <h1>SE UDSTYR</h1>
       <h3>Bemærk: Udstyr kan ikke bookes online</h3>
       <p>
         Besøg os i Tech & story lab mellem 09.00-15.00, mandag-fredag for at
         booke dit udstyr.
       </p>
+    </div>
+    <main class="grid_1-1-1">
+      <!-- Section 3 -->
       <template id="smallProductTemplate">
         <article class="smallProduct">
+          <img src="./img/kamera.webp" alt="" />
           <h3 class="name">Name</h3>
           <p class="mærke">Mærke</p>
-          <a class="laes_mere" href="single-view.html">Læs mere</a>
-          <hr />
-          <a
-            class="read_more"
-            href="https://kea.topdesk.net/tas/public/ssp/90b66cfd-1153-4ddf-a4b6-88a48464015e"
-            >Se ledig status</a
-          >
+          <div class="text-wrap">
+            <a
+              class="read_more"
+              href="https://kea.topdesk.net/tas/public/ssp/90b66cfd-1153-4ddf-a4b6-88a48464015e"
+              ><p>Se ledig status</p></a
+            >
+            <hr />
+            <a class="laes_mere" href="single-view.html"
+              ><p class="bold">Læs mere</p></a
+            >
+          </div>
         </article>
       </template>
     </main>
+
     <script src="produktliste.js"></script>
   </body>
 </html>
